@@ -16,10 +16,8 @@ class TestScoreGuess(unittest.TestCase):
 
     def test_all_correct(self):
         self.assertEqual(score_guess("crane", "crane"), "YYYYY")
-
     def test_no_letters(self):
         self.assertEqual(score_guess("crane", "brick"), "OYXXX")
-
     def test_mixed_result(self):
         # c r a n e
         # t r a c e
